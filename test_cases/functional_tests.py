@@ -86,7 +86,7 @@ class FunctionalTest(BaseTest):
     def test_mkdir_multiple(self):
         """
         Testing of creation of TWO folders
-        Expectation: 2 directory created
+        Expectation: 2 directories created
         """
         dir1 = os.path.join(self.test_dir, "1")
         dir2 = os.path.join(self.test_dir, "2")
