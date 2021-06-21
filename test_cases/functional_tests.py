@@ -352,6 +352,21 @@ class FunctionalTest(BaseTest):
         self.assertTrue(os.path.exists(dir2),
                         "Directory 2 was not created:" + stderr)
 
+    def test_mkdir_parent_existing_folder(self):
+        """
+        Create a directory if directory exists
+        Expectation: directory is not change, mkdir command exits without error
+        """
+        (exit_code, _, stderr) = MkDir.run(
+            [self.test_dir],
+            [MkDir.Arguments(MkDir.ArgumentsName.PARENTS)]
+            )
+
+        self.assertEqual(0, exit_code,
+                         "Exit code raise for folder creation - parent:" +
+                         stderr)
+        self.assertTrue(os.path.exists(self.test_dir),
+                        "Directory was not created:" + stderr)
     def test_verbose(self):
         """
         Printout details about directory creation
