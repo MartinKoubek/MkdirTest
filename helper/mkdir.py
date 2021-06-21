@@ -94,6 +94,10 @@ class MkDir(object):
                               stderr=subprocess.PIPE)
 
         exit_code = proc.returncode
-        stdout = proc.stdout.decode()
-        stderr = proc.stderr.decode()
-        return (exit_code, stdout, stderr)
+        try:
+            stdout = proc.stdout.decode()
+            stderr = proc.stderr.decode()
+            return (exit_code, stdout, stderr)
+        except Exception as e:
+            return (1, "", str(e))
+        

@@ -1,4 +1,9 @@
 '''
+This is pyhon "main" script
+
+It checks Linux OS and runs all tests in this folder(s)
+No parameter required.
+
 Created on Jun 17, 2021
 
 @author: Martin Koubek
@@ -12,12 +17,17 @@ if __name__ == "__main__":
         print ("Tests must run on Linux OS")
         sys.exit(0)
         
-    stdout_buffer = ""
-    print (type(sys.stdout))
+    '''
+    Load all tests in a folder
+    '''
     loader = unittest.TestLoader()
     tests = loader.discover('.', pattern="*.py")
     testRunner = unittest.runner.TextTestRunner(stream=sys.stdout, 
                                                 verbosity=2)
+
+    """
+    Process results
+    """
     result = testRunner.run(tests)
     if len(result.errors) == 0 and len(result.failures) == 0 :
         print ("/**TEST PASSED: all ", result.testsRun, "tests passed**/")
