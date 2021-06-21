@@ -45,7 +45,7 @@ Automation output:
 ### Testing strategy
 There is presented several testing strategy.
 
-#### Testing of functions
+#### Functional testing
 FUNCTIONAL TESTING is a type of software testing that validates the software system against the functional requirements/specifications. The purpose of Functional tests is to test each function of the software application, by providing appropriate input, verifying the output against the Functional requirements. 
 
 Testing was devided to:
@@ -54,7 +54,7 @@ Testing was devided to:
 * regresion tests: was not performed in this example. Tests performed only on mkdir command in version "mkdir (GNU coreutils) 8.25"
 * usability testing: was performed partly in "Testing resources"
 
-#### Testing of interface
+#### Interface testing
 Interface Testing is defined as a software testing type which verifies whether input and output of software system is is done correctly.
 
 Testing was devided to:
@@ -62,7 +62,7 @@ Testing was devided to:
 * Extra long name directories
 * Invalid parameters
  
-#### Testing of fault behaviour
+#### Fault behaviour testing
 Fault testing is a testing technique which sets system conditions a way, the software system fails:
 
 Testing was devided to:
@@ -70,7 +70,7 @@ Testing was devided to:
 * no disk space
 * foder already exists
 
-#### Testing of error injections
+#### Error injections testing
 Error or Fault injection is a testing technique which aids in understanding how a [virtual/real] system behaves when stressed in unusual ways.
 
 This testing was not done as mkdir command is very simple which makes this testing imposible.
@@ -84,7 +84,7 @@ For complex software system, the following strategies would be used:
 * Disk out of space
 * Change of permissions
 
-#### Testing of resources
+#### Resources testing
 Resource utilization tests are test process aimed to determine the resource usage of a software product.
 
 Testing was devided to:
@@ -99,5 +99,5 @@ python3 mkdir_test.py
 
 ### Findings
 
-Some functional test fail. It need be discussed, whether it is failing function or this is intention from author of mkdir. These tests are marked as FAIL_test_* and they do not run by default
+Some functional tests fail. It need be discussed, whether it is failing function or this is intention from author of mkdir. These tests are marked as FAIL_test_* and they do not run by default
  
