@@ -41,6 +41,7 @@ Automation output:
 * As command "mkdir" is platform depeneded, the unittests are also platform dependend - running only on Linux OS
 * Blackbox strategy of testing was choosen as mkdir command is a linux command that is undevidable to smaller parts 
 * Only stdin input is used for setting command parameters and stdout and stderr is used for reading output of command. No other interface are tested.
+* Test on mkdir version: mkdir (GNU coreutils) 8.25
 
 ### Testing strategy
 There is presented several testing strategy.
