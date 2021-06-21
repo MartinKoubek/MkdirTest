@@ -22,13 +22,11 @@ Design and create automated tests for mkdir linux(unix) command.
 
 Automation output:
 * [ ] When check passed print on stdout: "[PASS] <description of check>"
-    * Need discussion with Test manager if stdout can follow unittest stndard format - format: <description of check>... [ok]
+    * Need discussion with Test manager if stdout can follow unittest standard format - format: <description of check>... [ok]
 * [ ] When check failed print on stdout: "[FAIL] <description of check, explanation of failure>"
-    * Need discussion with Test manager if stdout can follow unittest stndard format - format:  <description of check, explanation of failure> ... [FAIL]
-* [X] If any check inside test script failed it should exit returning 1
-        and print on stdout: "/**TEST FAILED: <number of failed checks, summary>**/"
-* [X] If all check passed it should exit returning 0 and print on
-        stdout: "/**TEST PASSED: <summary>**/"
+    * Need discussion with Test manager if stdout can follow unittest standard format - format:  <description of check, explanation of failure> ... [FAIL]
+* [X] If any check inside test script failed it should exit returning 1 and print on stdout: "/**TEST FAILED: <number of failed checks, summary>**/"
+* [X] If all check passed it should exit returning 0 and print on stdout: "/**TEST PASSED: <summary>**/"
 
 ### Notes:
 
